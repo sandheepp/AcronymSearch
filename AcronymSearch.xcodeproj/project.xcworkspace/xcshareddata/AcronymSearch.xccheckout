@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>71D239C2-6167-4BDC-98A0-653A04B1E50E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AcronymSearch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>21EFF45C2BC4AD6E3D7C45B037D1AED51ABDA518</key>
+		<string>https://github.com/sandheepp/AcronymSearch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AcronymSearch.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>21EFF45C2BC4AD6E3D7C45B037D1AED51ABDA518</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sandheepp/AcronymSearch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>21EFF45C2BC4AD6E3D7C45B037D1AED51ABDA518</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>21EFF45C2BC4AD6E3D7C45B037D1AED51ABDA518</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AcronymSearch</string>
+		</dict>
+	</array>
+</dict>
+</plist>

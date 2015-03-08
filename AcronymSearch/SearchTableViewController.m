@@ -51,6 +51,7 @@ static NSString *baseURL = @"http://www.nactem.ac.uk/software/acromine/dictionar
     Acronyms *acronym = [_acronyms objectAtIndex:indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"Abbreviation : %@", [acronym lf]];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"Since : %@ ,  Freq : %@", [acronym since],[acronym freq]];
+    
     return cell;
 }
 
@@ -107,13 +108,15 @@ static NSString *baseURL = @"http://www.nactem.ac.uk/software/acromine/dictionar
     _acronyms = [NSMutableArray new];
     NSDictionary *innerDict = [[response objectEnumerator] nextObject];
     NSDictionary *lfsDict = [innerDict objectForKey:@"lfs"];
+    NSEnumerator *enumerator = [lfsDict objectEnumerator];
     for (int i=0; i < lfsDict.count; i++)
     {
-        NSDictionary *dict = [[lfsDict objectEnumerator]nextObject];
+        NSDictionary *dict = [enumerator nextObject];
         [self addAcronymsToArray:dict];
+        NSEnumerator *varsEnumerator = [[dict objectForKey:@"vars"] objectEnumerator];
         for (int j = 0; j < [[dict objectForKey:@"vars"] count]; j++)
         {
-            NSDictionary *vars = [[[dict objectForKey:@"vars"] objectEnumerator]nextObject];
+            NSDictionary *vars = [varsEnumerator nextObject];
             [self addAcronymsToArray:vars];
         }
     }
@@ -142,6 +145,7 @@ static NSString *baseURL = @"http://www.nactem.ac.uk/software/acromine/dictionar
     acronyms.freq = [dict objectForKey:@"freq"];
     acronyms.since = [dict objectForKey:@"since"];
     [_acronyms addObject:acronyms];
+    NSLog(@"%@ %@ %@",[acronyms lf],[acronyms since],[acronyms freq]);
 
 }
 
